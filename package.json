@@ -1,0 +1,42 @@
+{
+  "name": "@stdlib/math-base-ops-umul",
+  "version": "0.0.0",
+  "description": "Perform C-like multiplication of two unsigned 32-bit integers.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-ops-umul.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "math.imul",
+    "imul",
+    "umul",
+    "multiplication",
+    "multiply",
+    "mult",
+    "integer",
+    "unsigned",
+    "uint",
+    "uint32",
+    "32-bit",
+    "32bit",
+    "long",
+    "c",
+    "emulate",
+    "emulation"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
