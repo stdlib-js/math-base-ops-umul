@@ -59,7 +59,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.umul;
+})();
 })();
 </script>
 ```
@@ -104,6 +106,7 @@ v = umul( 2147483648>>>0, 5>>>0 ); // 2^31 * 5 = 10737418240 => 32-bit integer o
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
 <script type="text/javascript">
+(function () {
 (function () {.factory;
 var UINT32_MAX = require( '@stdlib/constants-uint32-max' );
 var umul = require( '@stdlib/math-base-ops-umul' );
@@ -123,6 +126,7 @@ for ( i = 0; i < 100; i++ ) {
     console.log( '%d x %d = %d', a, b, y );
 }
 
+})();
 })();
 </script>
 </body>
@@ -218,7 +222,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/ops/imul]: https://github.com/stdlib-js/math-base-ops-imul/tree/umd
+[@stdlib/math/base/ops/imul]: https://github.com/stdlib-js/math-base-ops-imul/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
