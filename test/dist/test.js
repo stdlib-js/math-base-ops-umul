@@ -26,7 +26,7 @@ var umul = require( './../../dist' );
 
 // FIXTURES //
 
-var data = require( './../..xtures/c/data.json' );
+var data = require( './../fixtures/c/data.json' );
 
 
 // TESTS //
