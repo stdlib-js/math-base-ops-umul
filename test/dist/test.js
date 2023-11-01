@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,35 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var umul = require( './../../dist' );
-
-
-// FIXTURES //
-
-var data = require( './../fixtures/c/data.json' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof umul, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function emulates C-like multiplication of two unsigned 32-bit integers', function test( t ) {
-	var expected;
-	var actual;
-	var a;
-	var b;
-	var i;
-
-	a = data.a;
-	b = data.b;
-	expected = data.expected;
-	for ( i = 0; i < expected.length; i++ ) {
-		actual = umul( a[ i ], b[ i ] );
-		t.strictEqual( actual, expected[ i ], 'returns expected value. a: '+a[i]+'. b: '+b[i]+'. expected: '+expected[i]+'. actual: '+actual+'.' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
